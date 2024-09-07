@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Netflix</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="nav">
+      <div class="nav_left">
+        <a href="index.html">
+          <img class="nav_netflix" src="./images/netflix.png" alt="" />
+        </a>
+      </div>
+      <div class="nav_right">
+        <img
+          src="./images/blink icon face.png"
+          class="nav_blink icon face"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- banner -->
+    <header id="banner">
+      <div class="banner_contents">
+        <h1 id="banner_title">Banner Title</h1>
+        <!-- Updated -->
+        <div id="banner_buttons">
+          <button class="banner_button">Play</button>
+          <button class="banner_button">My List</button>
+        </div>
+        <p id="banner_description">Banner Description</p>
+        <!-- Updated -->
+      </div>
+      <div id="banner_fadeBottom"></div>
+    </header>
+
+    <!-- row -->
+    <div id="headrow">
+      <div class="row">
+        <h2 class="row_title"></h2>
+        <div class="row_posters"></div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector(".nav");
+        nav.classList.toggle("active", window.scrollY > 0);
+      });
+    </script>
+
+    <!-- Link to your JavaScript file -->
+    <script src="index.js"></script>
+  </body>
+</html>
